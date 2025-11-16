@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+
+    <div class="container my-5">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#info_html" data-bs-toggle="tab">Curso HTML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#info_css" data-bs-toggle="tab">Curso CSS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#info_js" data-bs-toggle="tab">Curso JS</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="info_html" class="tab-pane container border p-5 mt-4">
+                <p class="h4">Infos Curos HTML</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic, dolor, eius veritatis impedit quis doloribus totam cumque fugit ipsam iusto earum eos recusandae iste, perspiciatis quisquam sit quod quo. lor</p>
+            </div>
+            <div id="info_css" class="tab-pane container border p-5 mt-4">
+                <p class="h4">Infos Curos CSS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic, dolor, eius veritatis impedit quis doloribus totam cumque fugit ipsam iusto earum eos recusandae iste, perspiciatis quisquam sit quod quo. lor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas provident, velit delectus eveniet architecto quia dignissimos harum reiciendis dicta totam eum asperiores, ratione inventore. Veritatis enim magnam minus sapiente.</p>
+            </div>
+            <div id="info_js" class="tab-pane container border p-5 mt-4">
+                <p class="h4">Infos Curos JS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic, dolor, eius veritatis impedit quis doloribus totam cumque fugit ipsam iusto earum eos recusandae iste, perspiciatis quisquam sit quod quo. lor Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi perspiciatis et, eum atque optio sit corrupti iusto libero, amet impedit consequatur facere? Sint inventore omnis ipsam quasi! Odio, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptates iure molestias amet quos. Unde voluptate voluptas ipsa nobis deserunt consequatur temporibus pariatur eveniet sunt doloribus, earum quos, vero minus!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let itens = [...document.querySelectorAll(".nav-link")]
+
+        itens.forEach((el) => { el.addEventListener("click", (it) => {
+            itens.forEach((i)=> i.classList.remove("active"))
+            it.target.classList.add("active")
+            } 
+        )})
+    </script>
+
+
+  </body>
+</html>

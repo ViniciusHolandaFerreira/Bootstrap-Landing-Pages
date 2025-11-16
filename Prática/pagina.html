@@ -1,0 +1,97 @@
+
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Página - Prática</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        .fundoAzulescuro{
+            background-color: #046;
+        }
+
+        .fundoCinzaClaro{
+            background-color: #ddd;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <!---------------------------------------------------------------------------------->
+    <header class="d-flex justify-content-around align-items-center bg-primary">
+        <img src="./logo.png" alt="logo cfb cursos" style="width: 200px;">
+        <h3 class="text-light">Modelo de site Bootstrap</h3>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark fundoAzulescuro"> 
+        <div class="container-fluid">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Arquivos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!---------------------------------------------------------------------------------->
+    <div class="m-5">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card fundoCinzaClaro mb-3 p-2">
+                    <div class="card-body">
+                        <h2 class="card-title">Título do Conteúdo</h2>
+                        <h5 class="card-subtitle mb-2">Descrição do conteúdo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium pariatur voluptas maiores dignissimos voluptatum quae voluptate, facere tempore nobis autem laboriosam perspiciatis veniam inventore et repudiandae repellat molestiae quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur architecto earum incidunt asperiores, libero veniam temporibus ratione ducimus debitis odit atque? Aliquid dolore modi nostrum eos, corrupti similique reiciendis!</p>
+                    </div>
+                </div>
+                <div class="card fundoCinzaClaro mb-3 p-2">
+                    <div class="card-body">
+                        <h2 class="card-title">Título do Conteúdo</h2>
+                        <h5 class="card-subtitle mb-2">Descrição do conteúdo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium pariatur voluptas maiores dignissimos voluptatum quae voluptate, facere tempore nobis autem laboriosam perspiciatis veniam inventore et repudiandae repellat molestiae quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur architecto earum incidunt asperiores, libero veniam temporibus ratione ducimus debitis odit atque? Aliquid dolore modi nostrum eos, corrupti similique reiciendis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <h2>Sobre</h2>
+                    <h5>Sobre o CFB Cursos</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum tempore explicabo repudiandae veniam nulla? Ipsum praesentium illo</p>
+                </div>
+                <div>
+                    <h2>Alguns Cursos</h2>
+                    <ul class="nav nav-pills d-flex flex-column">
+                        <li class="nav-item"><a class="nav-link active" href="#">C++</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">JavaScript</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">HTML & CSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">React</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------->
+    <footer class="mt-5 p-4 bg-dark text-light text-center">
+        <p class="m-0">CFB Cursos | https://www.youtube.com/watch?v=JZFoWCJzUvQ&list=</p>
+    </footer>
+
+    <script>
+        const topNavLinks = document.querySelectorAll("nav .nav-link");
+
+        topNavLinks.forEach((el) => {
+            el.addEventListener("click", (e) => {
+                topNavLinks.forEach((el) => el.classList.remove("active"));
+                e.currentTarget.classList.add("active");
+            });
+        });
+
+
+    </script>
+
+  </body>
+</html>

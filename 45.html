@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Formulários</title>
+
+  </head>
+  <body>
+
+    <form class="container border my-3 p-5 was-validated needs-validation" novalidate  style="width: 700px;">
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" required>
+        </div>
+
+        <div class="form-floating mb-3">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" id="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="senha">Senha:</label>
+            <input class="form-control" type="password" id="senha" required>
+        </div>
+
+        <div class="mb-3">
+            <select id="curso" class="form-select" required>
+                <option selected disabled>Sendo cursado:</option>
+                <option value="cc">Ciencia da computação</option>
+                <option value="ads">Analise de Desenvolvimento de Sistemas</option>
+                <option value="si">Sistema de Informações</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Informe suas stacks:</label>
+            <div>
+                <input type="checkbox" value="frontend">
+                <label for="front">HTML|CSS|JS</label>
+            </div>
+            <div>
+                <input type="checkbox" value="backend">
+                <label for="back">NODEjs|JAVA|PYTHON</label> 
+            </div>
+            <div>
+                <input type="checkbox" value="banco">
+                <label for="banco">MYSQL|MONGODB</label>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
+
+
+    </form>
+
+
+
+
+
+
+
+
+  </body>
+</html>
