@@ -1,0 +1,38 @@
+        
+        
+    #nav{
+        background-color: #ffffff;
+    }
+
+    #nav .nav-link{
+        color: #000000;
+        font-size: 1.1rem;
+    }
+
+
+    @media screen and (min-width:768px) {
+        .navbar-brand{
+            margin-right: 0;
+            padding: 0 2rem;
+        }
+
+        .navbar .navbar-nav .nav-link{
+            padding: 0.5rem 2rem;
+        }
+
+        #home div, #about div, #contact > div{
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+
+    @media screen and (min-width:1200px) {
+        .container-lg{
+            max-width: 80%;
+        }
+
+    }
+
+
+
