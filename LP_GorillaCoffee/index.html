@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>GorillaCoffee</title>
+    <!--- Bootstrap --->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+
+        :root{
+            --primary-color: #0a1118; 
+            --primary-color-highlight: #233D54;
+            --bs-body-bg: #FBF0F6;
+            --bs-body-font-family: ;
+        }
+
+
+        /* Sessão Navbar */
+        #navbar{
+            background-color: var(--primary-color)
+        }
+
+
+        #submenu{
+            height: 100vh;
+            border-radius: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(255, 247, 231);
+        }
+
+        #submenu .contentM{
+            height: 100vh;
+            padding: 0 0.8rem;
+        }
+
+        #submenu button {
+            position: absolute;
+            right: 16px; 
+            top: 16px;
+            background-color: rgb(255,255,255,0.6);
+        }
+
+
+
+
+
+
+
+    </style>
+
+
+
+    
+</head>
+<body>
+
+    <!-- Sessão Navbar-->
+    <header>
+        <nav id="navbar" class="navbar p-3 fixed-top d-flex justify-content-between align-items-center">
+            <!-- Menu Exibition-->
+            <a class="navbar-brand text-white fs-5 fw-bold" href="#">GorillaCoffee</a>
+            <button class="nav-item text-white btn" data-bs-target="#submenu" data-bs-toggle="collapse" aria-expanded="false"><i class="bi bi-list fs-4"></i></button>
+            <!-- Menu Collapse -->
+            <div id="submenu" class="collapse">
+                <div class="contentM container-xxl d-flex align-items-start align-items-md-center">
+                    <button class="btn" data-bs-target="#submenu" data-bs-toggle="collapse"><i class="bi bi-x fs-4"></i></button>
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 mt-4">
+                            <div class="row">
+                                <div class="col-2 col-sm-12 mb-4">
+                                    <img class="img-fluid" src="./imgs/1-coffe-flavour.jpg" alt="imagem">
+                                </div>
+                                <div class="col-10">
+                                    <h3>Amazing Flavour</h3>
+                                    <p>Find Out more about our amazing flavour</p>
+                                    <p>Learn More <i class="bi bi-arrow-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <div class="row">
+                                <div class="col-2 col-sm-12 mb-4">
+                                    <img class="img-fluid" src="./imgs/1-coffe-flavour.jpg" alt="imagem">
+                                </div>
+                                <div class="col-10">
+                                    <h3>Amazing Flavour</h3>
+                                    <p>Find Out more about our amazing flavour</p>
+                                    <p>Learn More <i class="bi bi-arrow-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <div class="row">
+                                <div class="col-2 col-sm-12 mb-4">
+                                    <img class="img-fluid" src="./imgs/1-coffe-flavour.jpg" alt="imagem">
+                                </div>
+                                <div class="col-10">
+                                    <h3>Amazing Flavour</h3>
+                                    <p>Find Out more about our amazing flavour</p>
+                                    <p>Learn More <i class="bi bi-arrow-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+</body>
+</html>
